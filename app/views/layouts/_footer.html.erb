@@ -1,0 +1,20 @@
+<footer class="footer">
+  <small>
+    ザ <a href="https://twitter.com/zakoshisyoh?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">コシショウ</a>
+    最初は <a href="https://www.yoshimoto.co.jp/">吉本工業</a>にいたんだぜハンバーグ！！！
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Profile", profile_path %></li>
+<%
+=begin
+      <li><a href="https://newspicks.com/">世の情勢を掴んでなんぼじゃよ</a></_li>
+=end
+%>
+      <li><%= link_to "お主、世の情勢も知らんとな？", "https://newspicks.com/",
+                target: :_new, rel: [:noopener, :norefferer],
+                data: { confirm: "News Picks を開きますか？" } %></li>
+    </ul>
+  </nav>
+</footer>
